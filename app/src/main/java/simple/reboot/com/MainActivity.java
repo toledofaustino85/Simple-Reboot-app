@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
      * It's good practice to declare immutable variables in upper case
      */
     private static final String SHUTDOWN_BROADCAST
-            = "am broadcast android.intent.action.ACTION_SHUTDOWN";
+            = "am broadcast -a android.intent.action.ACTION_SHUTDOWN";
     private static final String SHUTDOWN = "reboot -p";
     private static final String REBOOT_CMD = "reboot";
-    private static final String REBOOT_SOFT_REBOOT_CMD = "setprop ctl.restart zygote";
+    private static final String REBOOT_SOFT_REBOOT_CMD = "setprop ctl.restart zygote"; // maybe "am restart"
     private static final String REBOOT_RECOVERY_CMD = "reboot recovery";
     private static final String REBOOT_BOOTLOADER_CMD = "reboot bootloader";
     private static final String[] REBOOT_SAFE_MODE
